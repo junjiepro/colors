@@ -1,0 +1,25 @@
+# Colors Fullstack Architecture Document
+
+## Table of Contents
+
+- [Colors Fullstack Architecture Document](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Change Log](#change-log)
+  - [Starter Template Selection](#starter-template-selection)
+  - [High Level Architecture](#high-level-architecture)
+  - [Tech Stack](#tech-stack)
+  - [Data Models](#data-models)
+  - [API Specification](#api-specification)
+  - [Components](#components)
+  - [Core Workflows](#core-workflows)
+  - [REST API Specification](#rest-api-specification)
+  - [Database Schema](#database-schema)
+  - [Source Tree](#source-tree)
+  - [Infrastructure and Deployment](#infrastructure-and-deployment)
+  - [Error Handling Strategy](#error-handling-strategy)
+  - [Coding Standards](#coding-standards)
+  - [Testing Strategy](#testing-strategy)
+  - [Security and Performance](#security-and-performance)
+  - [Error Handling](#error-handling)
+  - [Monitoring and Observability](#monitoring-and-observability)
+  - [Development Workflow](#development-workflow)
