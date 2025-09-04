@@ -1,103 +1,36 @@
-# MCP Tool Connection Manager
-
-A Next.js application for managing MCP (Model Context Protocol) tool connections. This application allows you to:
-
-- Add new MCP tool connections
-- Edit existing tool configurations
-- Test connections to MCP tools
-- View connection status and details
-
-## Features
-
-- **Tool Management**: Add, edit, and remove MCP tool connections
-- **Connection Testing**: Verify tool connectivity before saving
-- **Multiple Authentication Methods**: Support for none, basic auth, token, and API key authentication
-- **Responsive UI**: Works on desktop and mobile devices
-- **Type Safety**: Built with TypeScript for better developer experience
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, install the dependencies:
+First, run the development server:
 
 ```bash
-pnpm install
-```
-
-Then, run the development server:
-
-```bash
+npm run dev
+# or
+yarn dev
+# or
 pnpm dev
+# or
+bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Environment Variables
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Create a `.env.local` file in the root directory and add the following environment variables:
-
-```
-NEXT_PUBLIC_API_URL=http://localhost:3000
-```
-
-## Project Structure
-
-- `src/app/api/tools/` - API routes for tool management
-- `src/components/mcp/` - MCP-specific React components
-- `src/components/ui/` - Reusable UI components
-- `src/types/` - TypeScript type definitions
-- `src/lib/` - Utility functions and API clients
-
-## API Endpoints
-
-### Get All Tools
-- **GET** `/api/tools` - Retrieve a list of all configured tools
-
-### Create a Tool
-- **POST** `/api/tools` - Add a new tool
-  ```json
-  {
-    "name": "Example Tool",
-    "connectionType": "http",
-    "endpoint": "https://api.example.com",
-    "authMethod": "none"
-  }
-  ```
-
-### Test Tool Connection
-- **POST** `/api/tools/test-connection` - Test a tool connection
-  ```json
-  {
-    "name": "Example Tool",
-    "connectionType": "http",
-    "endpoint": "https://api.example.com",
-    "authMethod": "none"
-  }
-  ```
-
-## Development
-
-### Available Scripts
-
-- `pnpm dev` - Start the development server
-- `pnpm build` - Build the application for production
-- `pnpm start` - Start the production server
-- `pnpm lint` - Run ESLint
-- `pnpm type-check` - Check TypeScript types
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
-To learn more about the technologies used in this project:
+To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
-- [React Hook Form](https://react-hook-form.com/) - Form handling
-- [Zod](https://zod.dev/) - Schema validation
-- [Radix UI](https://www.radix-ui.com/) - Accessible UI primitives
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Contributing
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Deploy on Vercel
 
-## License
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
